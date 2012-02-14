@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95C3950E14E9F16C00B5B2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3950D14E9F16C00B5B2FA /* UIKit.framework */; };
+		95C3951014E9F16C00B5B2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3950F14E9F16C00B5B2FA /* Foundation.framework */; };
+		95C3951214E9F16C00B5B2FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3951114E9F16C00B5B2FA /* CoreGraphics.framework */; };
+		95C3951414E9F16C00B5B2FA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3951314E9F16C00B5B2FA /* GLKit.framework */; };
+		95C3951614E9F16C00B5B2FA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3951514E9F16C00B5B2FA /* OpenGLES.framework */; };
+		95C3951C14E9F16C00B5B2FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95C3951A14E9F16C00B5B2FA /* InfoPlist.strings */; };
+		95C3951E14E9F16C00B5B2FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3951D14E9F16C00B5B2FA /* main.m */; };
+		95C3952214E9F16C00B5B2FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3952114E9F16C00B5B2FA /* AppDelegate.m */; };
+		95C3952514E9F16C00B5B2FA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C3952314E9F16C00B5B2FA /* MainStoryboard.storyboard */; };
+		95C3952714E9F16C00B5B2FA /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 95C3952614E9F16C00B5B2FA /* Shader.fsh */; };
+		95C3952914E9F16C00B5B2FA /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 95C3952814E9F16C00B5B2FA /* Shader.vsh */; };
+		95C3952C14E9F16C00B5B2FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3952B14E9F16C00B5B2FA /* ViewController.m */; };
+		95C3953414E9F16C00B5B2FA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3953314E9F16C00B5B2FA /* SenTestingKit.framework */; };
+		95C3953514E9F16C00B5B2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3950D14E9F16C00B5B2FA /* UIKit.framework */; };
+		95C3953614E9F16C00B5B2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3950F14E9F16C00B5B2FA /* Foundation.framework */; };
+		95C3953E14E9F16C00B5B2FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95C3953C14E9F16C00B5B2FA /* InfoPlist.strings */; };
+		95C3954114E9F16C00B5B2FA /* oneDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3954014E9F16C00B5B2FA /* oneDTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C3953714E9F16C00B5B2FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3950014E9F16C00B5B2FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C3950814E9F16C00B5B2FA;
+			remoteInfo = oneD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95C3950914E9F16C00B5B2FA /* oneD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C3950D14E9F16C00B5B2FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		95C3950F14E9F16C00B5B2FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95C3951114E9F16C00B5B2FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		95C3951314E9F16C00B5B2FA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		95C3951514E9F16C00B5B2FA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		95C3951914E9F16C00B5B2FA /* oneD-Info.plist */ = {isa = PBXFileReference; path = "oneD-Info.plist"; sourceTree = "<group>"; };
+		95C3951B14E9F16C00B5B2FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95C3951D14E9F16C00B5B2FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C3951F14E9F16C00B5B2FA /* oneD-Prefix.pch */ = {isa = PBXFileReference; path = "oneD-Prefix.pch"; sourceTree = "<group>"; };
+		95C3952014E9F16C00B5B2FA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		95C3952114E9F16C00B5B2FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95C3952414E9F16C00B5B2FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		95C3952614E9F16C00B5B2FA /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		95C3952814E9F16C00B5B2FA /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		95C3952A14E9F16C00B5B2FA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		95C3952B14E9F16C00B5B2FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95C3953214E9F16C00B5B2FA /* oneDTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oneDTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C3953314E9F16C00B5B2FA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		95C3953B14E9F16C00B5B2FA /* oneDTests-Info.plist */ = {isa = PBXFileReference; path = "oneDTests-Info.plist"; sourceTree = "<group>"; };
+		95C3953D14E9F16C00B5B2FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95C3953F14E9F16C00B5B2FA /* oneDTests.h */ = {isa = PBXFileReference; path = oneDTests.h; sourceTree = "<group>"; };
+		95C3954014E9F16C00B5B2FA /* oneDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oneDTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C3950614E9F16C00B5B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3950E14E9F16C00B5B2FA /* UIKit.framework in Frameworks */,
+				95C3951014E9F16C00B5B2FA /* Foundation.framework in Frameworks */,
+				95C3951214E9F16C00B5B2FA /* CoreGraphics.framework in Frameworks */,
+				95C3951414E9F16C00B5B2FA /* GLKit.framework in Frameworks */,
+				95C3951614E9F16C00B5B2FA /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C3952E14E9F16C00B5B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3953414E9F16C00B5B2FA /* SenTestingKit.framework in Frameworks */,
+				95C3953514E9F16C00B5B2FA /* UIKit.framework in Frameworks */,
+				95C3953614E9F16C00B5B2FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95C394FE14E9F16C00B5B2FA = {
+			isa = PBXGroup;
+			children = (
+				95C3951714E9F16C00B5B2FA /* oneD */,
+				95C3953914E9F16C00B5B2FA /* oneDTests */,
+				95C3950C14E9F16C00B5B2FA /* Frameworks */,
+				95C3950A14E9F16C00B5B2FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95C3950A14E9F16C00B5B2FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C3950914E9F16C00B5B2FA /* oneD.app */,
+				95C3953214E9F16C00B5B2FA /* oneDTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C3950C14E9F16C00B5B2FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C3950D14E9F16C00B5B2FA /* UIKit.framework */,
+				95C3950F14E9F16C00B5B2FA /* Foundation.framework */,
+				95C3951114E9F16C00B5B2FA /* CoreGraphics.framework */,
+				95C3951314E9F16C00B5B2FA /* GLKit.framework */,
+				95C3951514E9F16C00B5B2FA /* OpenGLES.framework */,
+				95C3953314E9F16C00B5B2FA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95C3951714E9F16C00B5B2FA /* oneD */ = {
+			isa = PBXGroup;
+			children = (
+				95C3952014E9F16C00B5B2FA /* AppDelegate.h */,
+				95C3952114E9F16C00B5B2FA /* AppDelegate.m */,
+				95C3952314E9F16C00B5B2FA /* MainStoryboard.storyboard */,
+				95C3952614E9F16C00B5B2FA /* Shader.fsh */,
+				95C3952814E9F16C00B5B2FA /* Shader.vsh */,
+				95C3952A14E9F16C00B5B2FA /* ViewController.h */,
+				95C3952B14E9F16C00B5B2FA /* ViewController.m */,
+				95C3951814E9F16C00B5B2FA /* Supporting Files */,
+			);
+			path = oneD;
+			sourceTree = "<group>";
+		};
+		95C3951814E9F16C00B5B2FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C3951914E9F16C00B5B2FA /* oneD-Info.plist */,
+				95C3951A14E9F16C00B5B2FA /* InfoPlist.strings */,
+				95C3951D14E9F16C00B5B2FA /* main.m */,
+				95C3951F14E9F16C00B5B2FA /* oneD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95C3953914E9F16C00B5B2FA /* oneDTests */ = {
+			isa = PBXGroup;
+			children = (
+				95C3953F14E9F16C00B5B2FA /* oneDTests.h */,
+				95C3954014E9F16C00B5B2FA /* oneDTests.m */,
+				95C3953A14E9F16C00B5B2FA /* Supporting Files */,
+			);
+			path = oneDTests;
+			sourceTree = "<group>";
+		};
+		95C3953A14E9F16C00B5B2FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C3953B14E9F16C00B5B2FA /* oneDTests-Info.plist */,
+				95C3953C14E9F16C00B5B2FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C3950814E9F16C00B5B2FA /* oneD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C3954414E9F16C00B5B2FA /* Build configuration list for PBXNativeTarget "oneD" */;
+			buildPhases = (
+				95C3950514E9F16C00B5B2FA /* Sources */,
+				95C3950614E9F16C00B5B2FA /* Frameworks */,
+				95C3950714E9F16C00B5B2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oneD;
+			productName = oneD;
+			productReference = 95C3950914E9F16C00B5B2FA /* oneD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95C3953114E9F16C00B5B2FA /* oneDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C3954714E9F16C00B5B2FA /* Build configuration list for PBXNativeTarget "oneDTests" */;
+			buildPhases = (
+				95C3952D14E9F16C00B5B2FA /* Sources */,
+				95C3952E14E9F16C00B5B2FA /* Frameworks */,
+				95C3952F14E9F16C00B5B2FA /* Resources */,
+				95C3953014E9F16C00B5B2FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C3953814E9F16C00B5B2FA /* PBXTargetDependency */,
+			);
+			name = oneDTests;
+			productName = oneDTests;
+			productReference = 95C3953214E9F16C00B5B2FA /* oneDTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C3950014E9F16C00B5B2FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "T.M. O'Brien";
+			};
+			buildConfigurationList = 95C3950314E9F16C00B5B2FA /* Build configuration list for PBXProject "oneD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95C394FE14E9F16C00B5B2FA;
+			productRefGroup = 95C3950A14E9F16C00B5B2FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C3950814E9F16C00B5B2FA /* oneD */,
+				95C3953114E9F16C00B5B2FA /* oneDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C3950714E9F16C00B5B2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3951C14E9F16C00B5B2FA /* InfoPlist.strings in Resources */,
+				95C3952514E9F16C00B5B2FA /* MainStoryboard.storyboard in Resources */,
+				95C3952714E9F16C00B5B2FA /* Shader.fsh in Resources */,
+				95C3952914E9F16C00B5B2FA /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C3952F14E9F16C00B5B2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3953E14E9F16C00B5B2FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95C3953014E9F16C00B5B2FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C3950514E9F16C00B5B2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3951E14E9F16C00B5B2FA /* main.m in Sources */,
+				95C3952214E9F16C00B5B2FA /* AppDelegate.m in Sources */,
+				95C3952C14E9F16C00B5B2FA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C3952D14E9F16C00B5B2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3954114E9F16C00B5B2FA /* oneDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C3953814E9F16C00B5B2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C3950814E9F16C00B5B2FA /* oneD */;
+			targetProxy = 95C3953714E9F16C00B5B2FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95C3951A14E9F16C00B5B2FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C3951B14E9F16C00B5B2FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		95C3952314E9F16C00B5B2FA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C3952414E9F16C00B5B2FA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		95C3953C14E9F16C00B5B2FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C3953D14E9F16C00B5B2FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C3954214E9F16C00B5B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95C3954314E9F16C00B5B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C3954514E9F16C00B5B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oneD/oneD-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "oneD/oneD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		95C3954614E9F16C00B5B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oneD/oneD-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "oneD/oneD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		95C3954814E9F16C00B5B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/oneD.app/oneD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oneD/oneD-Prefix.pch";
+				INFOPLIST_FILE = "oneDTests/oneDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		95C3954914E9F16C00B5B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/oneD.app/oneD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oneD/oneD-Prefix.pch";
+				INFOPLIST_FILE = "oneDTests/oneDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C3950314E9F16C00B5B2FA /* Build configuration list for PBXProject "oneD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3954214E9F16C00B5B2FA /* Debug */,
+				95C3954314E9F16C00B5B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C3954414E9F16C00B5B2FA /* Build configuration list for PBXNativeTarget "oneD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3954514E9F16C00B5B2FA /* Debug */,
+				95C3954614E9F16C00B5B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95C3954714E9F16C00B5B2FA /* Build configuration list for PBXNativeTarget "oneDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3954814E9F16C00B5B2FA /* Debug */,
+				95C3954914E9F16C00B5B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C3950014E9F16C00B5B2FA /* Project object */;
+}
