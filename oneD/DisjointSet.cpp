@@ -1,15 +1,15 @@
 #include "DisjointSet.h"
 
-DisjointSet::DisjointSet (const u_int size) {
+DisjointSet::DisjointSet (const uint size) {
 	addElements(size);
 }
 
-void DisjointSet::addElements(const u_int count) {
-	for (u_int i(0); i < count; ++i)
+void DisjointSet::addElements(const uint count) {
+	for (uint i(0); i < count; ++i)
 		m_sets.push_back(-1);
 }
 
-int DisjointSet::findRoot(const u_int element) {
+int DisjointSet::findRoot(const uint element) {
 	int max, min;
 	
 	max = m_sets.size() - 1;
@@ -28,7 +28,7 @@ int DisjointSet::findRoot(const u_int element) {
 	return m_sets[element];
 }
 
-void DisjointSet::setUnion(const u_int elementA, const u_int elementB) {
+void DisjointSet::setUnion(const uint elementA, const uint elementB) {
 	int rootA, rootB;
 
 	rootA = findRoot(elementA);

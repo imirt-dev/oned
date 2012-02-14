@@ -10,7 +10,7 @@
 #define PRINT_END printf("E")
 #define PRINTLN printf("\n")
 
-void Maze::tryEastWall(DisjointSet& set, const u_int index) {
+void Maze::tryEastWall(DisjointSet& set, const uint index) {
 	if ( index % _cols >= _cols - 1 )
 		return;
 
@@ -22,7 +22,7 @@ void Maze::tryEastWall(DisjointSet& set, const u_int index) {
 	}
 }
 
-void Maze::trySouthWall(DisjointSet& set, const u_int index) {
+void Maze::trySouthWall(DisjointSet& set, const uint index) {
 	if ( index / _cols >= _rows - 1 )
 		return;
 
@@ -53,13 +53,13 @@ void Maze::setStartAndEnd() {
 	_spots[flatten(_rows - 1, end)] = END;
 }
 
-Maze::Maze(const u_int rows, const u_int cols) : _rows(2*rows-1), _cols(2*cols-1) {
+Maze::Maze(const uint rows, const uint cols) : _rows(2*rows-1), _cols(2*cols-1) {
 	DisjointSet set(_rows * _cols);
-	std::vector<u_int> east_index, south_index;
+	std::vector<uint> east_index, south_index;
 
 	// Set up initial maze state
-	for (u_int row(0); row < _rows; ++row) {
-		for (u_int col(0); col < _cols; ++col) {
+	for (uint row(0); row < _rows; ++row) {
+		for (uint col(0); col < _cols; ++col) {
 			if (isEven(row) && isEven(col)) {
 				_spots.push_back(OPEN);
 
@@ -89,17 +89,17 @@ Maze::Maze(const u_int rows, const u_int cols) : _rows(2*rows-1), _cols(2*cols-1
 	setStartAndEnd();
 }
 
-Spot Maze::operator()(const u_int row, const u_int col) const {
+Spot Maze::get(const uint row, const uint col) const {
 	return _spots[flatten(row, col)];
 }
 
 void Maze::print() const {
-	for (u_int col(0); col <= _cols + 1; PRINT_WALL, ++col);
+	for (uint col(0); col <= _cols + 1; PRINT_WALL, ++col);
 	PRINTLN;
 
-	for (u_int row(0); row < _rows; ++row) {
+	for (uint row(0); row < _rows; ++row) {
 		PRINT_WALL;
-		for (u_int col(0); col < _cols; ++col) {
+		for (uint col(0); col < _cols; ++col) {
 			switch(_spots[flatten(row,col)]) {
 			case START:
 				PRINT_START;
@@ -119,6 +119,6 @@ void Maze::print() const {
 		PRINTLN;
 	}
 
-	for (u_int col(0); col <= _cols + 1; PRINT_WALL, ++col);
+	for (uint col(0); col <= _cols + 1; PRINT_WALL, ++col);
 	PRINTLN;
 }

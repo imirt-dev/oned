@@ -4,7 +4,7 @@
 #include <vector>
 
 using namespace std;
-typedef unsigned int u_int;
+typedef unsigned int uint;
 
 class DisjointSet {
 private:
@@ -12,12 +12,12 @@ private:
 
 public:
 	DisjointSet	() {}
-	DisjointSet (const u_int size);
+	DisjointSet (const uint size);
 	~DisjointSet() {}
 
-	void	addElements	(const u_int count);
-	int		findRoot	(const u_int element);
-	void	setUnion	(const u_int elementA, const u_int elementB);
+	void	addElements	(const uint count);
+	int		findRoot	(const uint element);
+	void	setUnion	(const uint elementA, const uint elementB);
 };
 
 #endif
