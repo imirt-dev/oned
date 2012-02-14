@@ -30,7 +30,7 @@
     delete _maze;
 }
 
-- (int) getSpotAtRow:(int)row Column:(int)col {
+- (Spot) getSpotAtRow:(int)row Column:(int)col {
     return _maze->get(row,col);
 }
 

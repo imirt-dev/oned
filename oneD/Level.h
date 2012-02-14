@@ -17,7 +17,7 @@
 - (Level*) initWithRows:(uint)rows Columns:(uint)cols;
 - (void) dealloc;
 
-- (int) getSpotAtRow:(int)row Column:(int)col;
+- (Spot) getSpotAtRow:(int)row Column:(int)col;
 - (uint) width;
 - (uint) height;
 

@@ -2,15 +2,8 @@
 #define _H_Maze
 
 #include "DisjointSet.h"
+#include "MazeEnums.h"
 #include <vector>
-
-enum Spot {
-	OPEN = 0,
-	START = 1,
-	END = 2,
-	ITEM = 3,
-	WALL = 4,
-};
 
 class Maze {
 private:
